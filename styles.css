@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inter:wght@300;400;600;700&family=Manuale:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --clr-red-light: #ba071d;
+  --clr-red-regular: #9f2836;
+  --clr-red-dark: #691b24;
+
+  --clr-white: #ffff;
+  --clr-white-bone: #d9d9d9;
+
+  --clr-grey: #404040;
+  --clr-grey-dark: #353535;
+  --clr-almost-dark: #1c1c1c;
+  --clr-dark: #1e1e1e;
+
+  /* Fonts */
+  --font-courier: "Courier Prime", monospace;
+  --font-inter: "Inter", sans-serif;
+  --font-manuale: "Manuale", serif;
+}
