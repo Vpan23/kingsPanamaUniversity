@@ -22,3 +22,110 @@
   --font-inter: "Inter", sans-serif;
   --font-manuale: "Manuale", serif;
 }
+img {
+  width: 100%;
+}
+.red {
+  color: var(--clr-red-light);
+}
+button {
+  transition: .3s all;
+  cursor: pointer;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+#main {
+  width: 100%;
+  height: 100dvh;
+  background: url('./Assets/Background/front-uni.jpg ' ) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: var(--clr-white );
+}
+.nabvar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+}
+.navbar .navbar-list {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-courier);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar li img {
+
+  width: 25px;
+  height: 25px;
+}
+.navbar-logo-text {
+  font-family: var(--font-manuale);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: .85;
+}
+.kiunpa-text {
+  font-size: 1.76rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.academy-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.main__cuadro {
+  display: flex;justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 400px;
+  max-width: 600px;
+  background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.2));
+  border-left: .65rem solid var(--clr-red-light);
+  max-height: 600px;
+  height: 250px;
+}
+.main__cuadro button {
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--clr-red-regular);
+  width: 160px;
+}
+.main__cuadro button:hover {
+  background-color: var(--clr-red-dark);
+}
