@@ -29,7 +29,7 @@ img {
   color: var(--clr-red-light);
 }
 button {
-  transition: .3s all;
+  transition: 0.3s all;
   cursor: pointer;
 }
 body {
@@ -40,13 +40,14 @@ body {
 }
 #main {
   width: 100%;
-  height: 100dvh;
-  background: url('./Assets/Background/front-uni.jpg ' ) no-repeat;
+  height: 120dvb;
+  background: url("./Assets/Background/front-uni.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: start;
+  padding: 1rem;
 }
 .navbar {
   display: flex;
@@ -57,7 +58,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  color: var(--clr-white );
+  color: var(--clr-white);
 }
 .nabvar-logo {
   display: flex;
@@ -79,9 +80,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.15rem;
 }
 .navbar li img {
-
   width: 25px;
   height: 25px;
 }
@@ -91,7 +92,8 @@ body {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  line-height: .85;
+  line-height: 0.85;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .kiunpa-text {
   font-size: 1.76rem;
@@ -103,29 +105,210 @@ body {
   font-weight: 300;
 }
 .main__cuadro {
-  display: flex;justify-content: center;
+  display: flex;
+  justify-content: space-between;
   gap: 1.5rem;
-  margin: 2rem;
-  padding: 1rem;
+  margin: 6vw;
+  padding: 3vw;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 400px;
-  max-width: 600px;
-  background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.2));
-  border-left: .65rem solid var(--clr-red-light);
+  width: 800px;
+  max-width: 800px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.74) 0%,
+    rgba(255, 255, 255, 0.74) 85%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-left: 0.65rem solid var(--clr-red-light);
+  height: 400px;
   max-height: 600px;
-  height: 250px;
 }
-.main__cuadro button {
-  height: 2.5rem;
+.learn-more {
+  height: 3.75rem;
   border-radius: 10px;
   border: none;
   color: var(--clr-white);
   text-transform: uppercase;
   font-weight: 600;
   background-color: var(--clr-red-regular);
+  font-size: 1rem;
   width: 160px;
+  margin-top: 1rem;
 }
-.main__cuadro button:hover {
+.learn-more:hover {
   background-color: var(--clr-red-dark);
+}
+.main__cuadro h1 {
+  font-size: 2.15rem;
+  font-weight: 600;
+}
+.main__cuadro p {
+  font-size: 1.65rem;
+  font-weight: 300;
+  font-family: var(--font-manuale);
+}
+/* Segunda Seccion */
+.section-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  justify-content: start;
+  position: relative;
+  gap: 2rem;
+}
+.imagen-corner {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: 160px;
+  max-width: 300px;
+}
+.section-2 h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.sec2__content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.sec2__content-img {
+  width: 30%;
+  max-width: 250px;
+  height: 300px;
+  max-height: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid var(--clr-red-light); /* Color del marco */
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+.sec2__content-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.sec2__content-text {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.sec2__content-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.sec2__content-text h1:hover {
+  color: var(--clr-red-dark);
+  transition: all ease 0.3s;
+}
+.sec2__content-text p,
+h1 {
+  font-family: var(--font-manuale);
+}
+.sec2__content-text .learn-more {
+  width: 100%;
+  max-width: 300px;
+}
+/* 3 Section */
+.section-3 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 5rem 2rem;
+}
+.esquinero-izquierdo {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 400px;
+}
+.sec3-title {
+  font-size: 2rem;
+}
+.sec3-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 1rem;
+  border: 1px solid;
+}
+.cuadro {
+  width: 20%;
+  max-width: 350px;
+  height: 400px;
+  overflow: hidden;
+}
+.cuadro .cuadro-normal {
+  position: relative;
+  background: url("./Assets/Background/kingspanamauniversityassets/cuadro1.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.cuadro .cuadro-normal .cuadro-interactivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  z-index: 1;
+}
+.cuadro .cuadro-normal .cuadro-interactivo h2 {
+  font-weight: 300;
+}
+.cuadro .cuadro-normal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.difum {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background: linear-gradient(
+    0deg,
+    #fff 0.17%,
+    rgba(255, 255, 255, 0.184) 56.96%
+  );
+  z-index: 0;
+}
+.cuadro-difuminado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.5rem;
+  height: 100%;
+  background: #ffffff72;
+}
+.cuadro-difuminado p {
+  font-family: var(--font-manuale);
+  font-size: 1.2rem;
 }

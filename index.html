@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>King's Panama University</title>
 
-    <link rel="shortcut icon" href="./Assets/Logos/Predisposicion_3.2.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-
+    <link
+      rel="shortcut icon"
+      href="./Assets/Logos/Predisposicion_3.2.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="section-main" id="main">
@@ -59,7 +62,13 @@
 
     <!-- Section 2 -->
     <section class="section-2">
-      <h1>Tending Blog Post</h1>
+      <div class="imagen-corner">
+        <img
+          src="/Assets/Background/kingspanamauniversityassets/curvas-esquinas.webp"
+          alt=""
+        />
+      </div>
+      <h1 class="red">Tending Blog Post</h1>
       <div class="sec2__content">
         <div class="sec2__content-img">
           <img
@@ -69,7 +78,9 @@
         </div>
 
         <div class="sec2__content-text">
-          <h1>Will AI be the technology that innovates the world?</h1>
+          <h1 class="red">
+            Will AI be the technology that innovates the world?
+          </h1>
           <p>
             Kiunpa professors discuss how to bring new tech every day,
             emphasizing that creating collaborative global teams has never been
@@ -83,31 +94,41 @@
 
     <!-- Section 3 -->
     <section class="section-3">
-      <h1 class="sec3-title">What are you interested in?</h1>
+      <div class="esquinero-izquierdo">
+        <img
+          src="./Assets/Background/kingspanamauniversityassets/curvas-esquinas-izquierdo.webp"
+          alt=""
+        />
+      </div>
+      <h1 class="red sec3-title">What are you interested in?</h1>
       <div class="sec3-group">
         <!-- Cuadro 1 -->
         <div class="cuadro">
           <div class="cuadro-normal">
-            <img
-              src="./Assets/Background/kingspanamauniversityassets/cuadro1.jpg"
-              alt=""
-            />
-            <h2>Health Care Leadership</h2>
-            <img
-              src="./Assets/SVG_Contents/expand_more_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
+            <div class="difum"></div>
+            <div class="cuadro-interactivo">
+              <h2>Health Care Leadership</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="color: #691b34"
+                height="30"
+                viewBox="0 -960 960 960"
+                width="30"
+              >
+                <path
+                  d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"
+                  fill="#691b34"
+                />
+              </svg>
+            </div>
             <div class="cuadro-difuminado">
+              <h2>Health Care Leadership</h2>
               <p>
                 Guiding teams for optimal patient care and continuous
                 improvement.
               </p>
-              <a href=""
-                >Read More
-                <img
-                  src="./Assets/SVG_Contents/expand_more_FILL0_wght400_GRAD0_opsz24.svg"
-                  class="90"
-              /></a>
+              <a href="">Read More
+                 </a>
             </div>
           </div>
         </div>
@@ -130,10 +151,19 @@
               </p>
               <a href=""
                 >Read More
-                <img
-                  src="./Assets/SVG_Contents/expand_more_FILL0_wght400_GRAD0_opsz24.svg"
-                  class="90"
-              /></a>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="color: #691b34"
+                height="30"
+                viewBox="0 -960 960 960"
+                width="30"
+              >
+                <path
+                  d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"
+                  fill="#691b34"
+                />
+              </svg>
+            </a>
             </div>
           </div>
         </div>
@@ -189,8 +219,8 @@
             </div>
           </div>
         </div>
-        <button class="learn-more">Explore Learning Paths</button>
       </div>
+      <button class="learn-more">Explore Learning Paths</button>
     </section>
 
     <!-- Section 4 -->
@@ -260,14 +290,15 @@
             </p>
             <ul>
               <li>Single billing for groups of 10 or more</li>
-              <li>Enjoy tiered discounts and pricing with savings of up to 50%</li>
+              <li>
+                Enjoy tiered discounts and pricing with savings of up to 50%
+              </li>
               <li>Track your team's progress with growth reports</li>
               <li>Explore flexible course and partnership plans</li>
             </ul>
           </div>
           <h3 class="red">Discover more and enroll your team now!</h3>
         </div>
-        
       </div>
     </section>
   </body>
