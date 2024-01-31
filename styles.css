@@ -82,7 +82,7 @@ body {
   align-items: center;
   font-size: 1.15rem;
 }
-.navbar li img {
+.navbar li svg {
   width: 25px;
   height: 25px;
 }
@@ -110,7 +110,6 @@ body {
   gap: 1.5rem;
   margin: 6vw;
   padding: 3vw;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 800px;
   max-width: 800px;
@@ -420,6 +419,7 @@ h1 {
   gap: .5rem;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .pointer:hover {
   cursor: pointer;

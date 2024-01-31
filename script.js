@@ -17,14 +17,3 @@ const imagenesDelCuadroSec2 = [
   } else {
     console.error("La cantidad de elementos y de imágenes no coincide.");
   }
-
-  // Seccion 4 Despliegue de Textos.
-  function toggleContent(button) {
-    var content = button.parentElement.nextElementSibling;
-
-    if (content.style.height === "0px" || content.style.height === "") {
-      content.style.height = "100%";
-    } else {
-      content.style.height = "0";
-    }
-  }
