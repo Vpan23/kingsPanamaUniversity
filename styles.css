@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 :root {
   --clr-red-light: #ba071d;
@@ -59,7 +60,7 @@ body {
   top: 0;
   left: 0;
   color: var(--clr-white);
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   z-index: 1000;
 }
 .nabvar-logo {
@@ -73,7 +74,6 @@ body {
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-white);
-
 }
 .navbar .navbar-list {
   display: flex;
@@ -90,7 +90,7 @@ body {
   cursor: pointer;
 }
 .navbar li:hover {
-  transition: all ease-in-out .1s;
+  transition: all ease-in-out 0.1s;
   border-bottom: 3px solid #fff;
 }
 .navbar li svg {
@@ -133,6 +133,9 @@ body {
   border-left: 0.65rem solid var(--clr-red-light);
   height: 400px;
   max-height: 600px;
+}
+.cuadro:hover {
+  cursor: pointer;
 }
 .learn-more {
   height: 3.75rem;
@@ -540,7 +543,7 @@ h1 {
   transition: all ease 0.3s;
   scale: 1.01;
 }
-.deslizador:hover path{
+.deslizador:hover path {
   fill: var(--clr-white);
 }
 .-izq {
@@ -599,7 +602,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: .5rem;
+  padding: 0.5rem;
   gap: 2rem;
 }
 .footer-logo {
@@ -631,7 +634,7 @@ footer {
 .social-media {
   position: absolute;
   right: 1.5rem;
-  top: .5rem;
+  top: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
