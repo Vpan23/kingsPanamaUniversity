@@ -17,3 +17,12 @@ const imagenesDelCuadroSec2 = [
   } else {
     console.error("La cantidad de elementos y de imágenes no coincide.");
   }
+
+  window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = '#9F2836'; // Cambia el color de fondo al hacer scroll
+    } else {
+        navbar.style.backgroundColor = 'transparent'; // Vuelve al color transparente cuando no hay scroll
+    }
+});
