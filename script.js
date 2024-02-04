@@ -26,3 +26,23 @@ const imagenesDelCuadroSec2 = [
         navbar.style.backgroundColor = 'transparent'; // Vuelve al color transparente cuando no hay scroll
     }
 });
+const btnMenuResponsive = document.querySelectorAll('.menu-icon');
+const btnMenuClose = document.querySelector('.open');
+const btnMenuOpen = document.querySelector('.close');
+const menuDeslizador = document.querySelector('.menu-deslizador');
+let activo = true;
+btnMenuResponsive.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    if(activo) {
+      menuDeslizador.style.height = '100%'
+      btnMenuClose.style.display = 'none';
+      btnMenuOpen.style.display = 'flex';
+      activo = false;
+    } else {
+      btnMenuOpen.style.display = 'none';
+      btnMenuClose.style.display = 'flex';
+      menuDeslizador.style.height = '0'
+      activo = true;
+    }
+  });
+});
