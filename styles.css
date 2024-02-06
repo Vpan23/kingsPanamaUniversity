@@ -1026,4 +1026,89 @@ footer {
   .sec4__content-text {
     width: auto;
   }
+  .dropdown {
+    text-align: start;
+    margin: 1.75rem;
+  }
+  .deslizador {
+    display: none;
+  }
+  .section-6 {
+    gap: 0;
+  }
+  .sec6__content {
+    padding: 2.25rem;
+  }
+  .sec6__author {
+    margin: 3.5rem 0;
+    gap: 2rem;
+    font-size: 1rem;
+  }
+  .author {
+    font-size: 1.25rem;
+  }
+  footer {
+    color: var(--clr-white);
+    width: 100%;
+    background-color: var(--clr-almost-dark);
+    overflow: hidden;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+  .sec7-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  .footer-logo {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    flex-direction: row;
+  }
+  .footer-logo img {
+    max-width: 130px;
+  }
+  .kiunpa-text {
+    font-size: 2.25rem;
+  }
+  .academy-text {
+    font-size: 1.75rem;
+  }
+  .social-media {
+    position: relative;
+    max-width: 100%;
+    right: 0;
+    top: 0;
+    font-size: 1.3rem;
+  }
+  .group-social-media li a svg{
+    font-size: 2rem; 
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .select-sections {
+    position: relative;
+  }
+  .group-selections {
+    position: relative;
+  }
+  .copyright {
+    position: relative;
+  }
+  .select-sections {
+    right: 0;
+  }
+  .group-selections {
+    align-items: center;
+    font-size: 1rem;
+  }
 }
